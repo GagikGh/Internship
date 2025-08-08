@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-blue-200 flex flex-col items-center p-5">
+    <h1 class="text-3xl font-bold mb-2">Memory Game</h1>
+    <p class="mb-5">Match the cards to win!</p>
+    <div>
+        <button class="px-4 p-3 bg-blue-600 text-white text-2xl font-bold variant" data-width="4" data-height="3">4 x 3</button>
+        <button class="px-4 p-3 bg-blue-600 text-white text-2xl font-bold variant" data-width="5" data-height="4">5 x 4</button>
+        <button class="px-4 p-3 bg-blue-600 text-white text-2xl font-bold variant" data-width="6" data-height="5">6 x 5</button>
+    </div>
+    <div class="w-400  bg-blue-200 grid gap-2  p-5" id="cards">
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
