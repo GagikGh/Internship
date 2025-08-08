@@ -19,6 +19,7 @@ buttons.forEach(btn =>{
 
         handleGame(generateArr(choseArray))
         console.log(choseArray);
+        document.querySelector(".reset-btn").remove()
     })
 })
 
@@ -62,8 +63,6 @@ let secondOpen = null;
 let block = false;
 let count = 0;
 let matchedCards = [];
-
-
 
 
 const handleGame = (data) => {
@@ -142,14 +141,12 @@ const handleGame = (data) => {
 function handleResetGame() {
     const resetGameButton = document.createElement("button");
     resetGameButton.textContent = "Reset Game";
-    resetGameButton.className = "px-4 p-3 bg-blue-600 text-white text-2xl font-bold";
+    resetGameButton.className = "px-4 p-3 bg-blue-600 text-white text-2xl font-bold reset-btn";
     document.body.appendChild(resetGameButton);
 
     resetGameButton.addEventListener("click", () => {
         cards.innerHTML = "";
         handleGame(generateArr(choseArray))
-
-
 
     });
 
