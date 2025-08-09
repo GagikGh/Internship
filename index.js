@@ -20,6 +20,7 @@ buttons.forEach(btn =>{
         handleGame(generateArr(choseArray))
         console.log(choseArray);
         document.querySelector(".reset-btn").remove()
+
     })
 })
 
@@ -70,7 +71,6 @@ const handleGame = (data) => {
     data.forEach((item) => {
         const card = document.createElement("div");
         card.className = "bg-white w-50 aspect-square rounded shadow cursor-pointer overflow-hidden ";
-
         const img = document.createElement("img");
         img.className = " w-full h-full object-cover hidden";
         img.src = item.image;
